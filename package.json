@@ -1,0 +1,32 @@
+{
+  "name": "calculator-api",
+  "version": "1.0.0",
+  "description": "API REST calculatrice en Node.js avec Jest et GitHub Actions CI",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "lint": "eslint src/ tests/",
+    "test": "jest",
+    "test:unit": "jest tests/calculator.test.js",
+    "test:integration": "jest tests/api.test.js",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inosthful/calculator-api-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inosthful/calculator-api-js/issues"
+  },
+  "homepage": "https://github.com/Inosthful/calculator-api-js#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.0",
+    "jest": "^30.4.2"
+  }
+}
